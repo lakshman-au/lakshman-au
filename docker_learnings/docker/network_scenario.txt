@@ -1,0 +1,10 @@
+You are developing a new containerized application for a client.
+The application will consists of two containers: one for the frontend application, and one for the database.
+Your client has security concerns about the database, 
+and they want it to run on a private network that is not publicly accessible. 
+
+docker network create frontend
+docker network create backend --internal
+docker container run -d --name database --network backend -e MYSQL_ROOT_PASSWORD=P4ssW0rd0! mysql:5.7
+docker container run -d --name frontend-app --network frontend nginx:latest
+docker network connect backend frontend-app

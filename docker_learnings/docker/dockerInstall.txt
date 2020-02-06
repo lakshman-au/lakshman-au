@@ -1,0 +1,33 @@
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
+sudo systemctl enable docker
+sudo systemctl start docker
+clear
+sudo docker run hello-world
+sudo usermod -a -G docker cloud_user
+exit
+docker run hello-world
+docker version
+
+docker pull ubuntu:16.04
+docker images
+docker images --no-trunc
+
+vi dockerfile
+docker build .
+docker images
+docker container run --name python -it eb51
+docker ps
+
+docker run -t -i → can be detached with ^P^Qand reattached with docker attach
+docker run -i → cannot be detached with ^P^Q; will disrupt stdin
+docker run → cannot be detached with ^P^Q; can SIGKILL client; can reattach with docker attach
+
+docker attach 1a7
+docker ps
+
+
+
+
+

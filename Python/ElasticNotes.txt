@@ -1,0 +1,27 @@
+Which Beat client is used to collect and ship events from logs? 
+--File beat
+Which Beat client is able to monitor the file integrity of specified files in addition to collecting data about syscalls on Linux systems? 
+--Audit beat
+Which Elasticsearch cluster state represents a cluster where one or more primary shards are not allocated to a node? 
+-Red
+Which Elasticsearch cluster state represents a cluster where all primary shards are allocated to a node but one or more replica shards are not?
+--Yellow
+Which Elastic Stack service is used to collect and ship data from your various data sources? 
+--File beat
+Which Elasticsearch node type is able to pre-process data coming into Elasticsearch with simple data pipelines? 
+--Ingest node
+Which X-Pack plugin specializes in exploring and discovering meaningful relationships in your data? 
+--Graph
+Which Kibana plugin would you use to debug your Grok patterns? 
+--Dev tools
+Which Beat client uses synthetic checks against various types of endpoints to perform uptime monitoring? 
+--Heart beat
+Master nodes are responsible for maintaining the cluster state of its members, indexes, and shards
+Coordinating-Only nodes are smart load balancers that route requests to the appropriate data nodes.
+Data nodes store shards and perform​ search and aggregation operations
+Ingest nodes can pre-process data coming into the Elasticsearch cluster with simple data pipelines
+Discover allows you to explore your raw documents from Elasticsearch by searching and filtering in real-time.
+Management provides a UI for configuring and managing your advanced Kibana settings, saved objects, index patterns, and field formatting.
+Logstash is the data processor of the Elastic Stack. Here you can parse and enrich your data before indexing it into Elasticsearch
+
+kibanaadmin:$apr1$lQWKKeVM$UgYvYVYzsvWSudV6Y8vHy0

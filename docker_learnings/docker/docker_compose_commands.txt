@@ -1,0 +1,12 @@
+docker compose commands
+
+up: Create and start containers
+ps:	List Containers
+stop:	Stop Services
+start:	Start services
+restart: Restart services
+down: Stop and remove containers,networks,images and volumes.
+
+docker-compose build:
+	if docker-compose context is a Dockerfile,it should be rebuilt if there is a change in Dockerfile 
+	before running docker-compose up 

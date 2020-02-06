@@ -1,0 +1,7 @@
+The mode in the open function tells Python what you want to do with the file. There are multiple modes that you can specify when dealing with text files.
+
+'w' – Write Mode: This mode is used when the file needs to be altered and information changed or added. Keep in mind that this erases the existing file to create a new one. File pointer is placed at the beginning of the file.
+'r' – Read Mode: This mode is used when the information in the file is only meant to be read and not changed inany way. File pointer is placed at the beginning of the file.
+'a' – Append Mode: This mode adds information to the end of the file automatically. File pointer is placed at the end of the file.
+'r+' – Read/Write Mode: This is used when you will be making changes to the file and reading information from it. The file pointer is placed at the beginning of the file.
+'a+' – Append and Read Mode: A file is opened to allow data to be added to the end of the file and lets your program read information as well. File pointer is placed at the end of the file.

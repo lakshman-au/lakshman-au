@@ -1,0 +1,7 @@
+while CONDITION:
+    pass
+	
+for TEMP_VAR in SEQUENCE:
+    pass	
+
+Unpacking Multiple Items in a for Loop

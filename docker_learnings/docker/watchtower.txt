@@ -1,0 +1,9 @@
+Portainer:
+
+
+
+Watch Tower:
+
+docker container run -d --name watchtower --restart always -v /var/run/docker.sock:/var/run/docker.sock v2tec/watchtower -i 15
+
+flag i ---> interval 15 seconds

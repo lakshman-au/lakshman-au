@@ -1,0 +1,4 @@
+docker compose file has four types of top-level keys.
+There's
+	version, services, networks, and volumes.
+The version key is mandatory.	

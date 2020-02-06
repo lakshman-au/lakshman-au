@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+
+  hub:
+    image: selenium/hub:3.141.59
+    ports:
+      - 4444:4444
+
+  chrome:
+    image: selenium/node-chrome:3.141.59
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+
+  firefox:
+    image: selenium/node-firefox:3.141.59
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+	  
+13.235.17.96
+
+http://13.235.17.96:4444/grid/console

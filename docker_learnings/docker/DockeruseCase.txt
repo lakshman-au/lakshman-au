@@ -1,0 +1,18 @@
+Why Use Docker?
+
+Docker Use Cases:
+
+    Dev/Prod parity:
+        Dev and Production environment are the same
+        Bugs in Production can be replicated in Development
+    Simplifying Configuration:
+        Lets you put your environment and configuration into code and deploy it
+        Allows the same Docker configuration to be used in a variety of environments
+        Decouples infrastructure requirements from the application environment
+    Code Pipeline Management:
+        Build standards and repeatable processes
+    Developer Productivity
+    App Isolation
+    Server Consolidation
+    Debugging Capabilities
+    Multi-tenancy

@@ -1,0 +1,23 @@
+To build one:
+
+docker image build -t <NAME>:<TAG> .
+
+Useful flags:
+
+    -f, --file string: This is the name of the Dockerfile (Default is PATH/Dockerfile).
+    --force-rm: Always remove intermediate containers.
+    --label list: Set metadata for an image.
+    --rm: Remove intermediate containers after a successful build (default is true).
+    --ulimit ulimit: This sets ulimit options (default is [])
+	
+
+https://github.com/linuxacademy/content-weather-app.git#remote-build.
+
+docker image build -t <NAME>:<TAG> <GIT_URL>#<REF>
+docker image build -t <NAME>:<TAG> <GIT_URL>#:<DIRECTORY>
+docker image build -t <NAME>:<TAG> <GIT_URL>#<REF>:<DIRECTORY>
+<REF>--> branchName
+default --> master
+
+Tagging the image:
+docker tag <SOURCE_IMAGE><:TAG> <TARGET_IMAGE>:<TAG>
